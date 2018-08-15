@@ -1,0 +1,264 @@
+/* creates little padding on top, left, right and bottom */
+body {
+    padding: 1em 1em;
+}
+
+/* putting the whole column card in the middle with set width */
+.card {
+    margin: 0 auto;
+    max-width: 885px;
+    max-height: auto;
+    border-color: #CCCCCC;
+    position: relative;
+}
+
+/* Making card title Bold and responsive font size */
+.card-title {
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+/* Decoration of the paragraph after card title */
+p {
+    font-size: 2.5vw;
+    font-weight: normal;
+    margin-top: 0;
+}
+
+/* Decoration of the strip on the image */
+.strip {
+    width: 25%;
+    height: 10%;
+    max-width: 100%;
+    max-height: auto;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    color: #ffffff;
+    background-color: #0277BD;
+    border: none;
+    text-align: center;
+    padding-top:1%;
+    font-size: 2vw;
+}
+
+/* Styling the button on the right bottom */
+.buttonStyle {
+    width: 95%;
+    height: auto;
+    max-height: 50px;
+    color: #ffffff;
+    background-color: #0277BD;
+    cursor: pointer;
+    border: none;
+    font-size: 2vw;
+    max-width: auto;
+    margin: 3% 3% 3% 3%;
+}
+
+/* Adds separate border and background color for the button */
+.borderButton {
+    border: 1px solid #CCCCCC;
+    background-color: rgb(247, 242, 242);
+}
+
+/* styling the price description part */
+.priceDescription {
+    font-size: 2.5vw;
+    width: 60%;
+    text-align: right;
+    float: right !important;
+    margin-left: 20%;
+}
+
+/* Styling the box which is in the middle of the right section */
+.box {
+    color: #CC0000;
+    border: 1px inset #CC0000;
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    text-align: center;
+    position: relative;
+}
+
+/* Styling the hr in the middle of the box */
+.hrStyle { 
+    width: 85%;
+    border-color: #CC0000;
+    display: block;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+} 
+
+/* Moves the 1st section that contains the image on the left side */
+.leftSide {
+    position: absolute;
+    float: left;
+}
+
+/* Moves the 2nd section on the right side */
+.rightSide {
+    float: right;
+    position: absolute;;
+    flex: 1;
+}
+
+/* Separates the button and the first part of the right section */
+.right {
+    margin-bottom: 3%;
+}
+
+/* Aligining the elements and text in the middle of the right section*/
+.roundedCircle {
+    color: rgb(146, 140, 140);
+    text-align: center;
+    margin-top: -5%;
+}
+
+/* Creates little circle element almost at the bottom of the right section */
+.rounded-circle {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(146, 140, 140);
+}
+
+/* Makes the image fully responsive for all devices */
+.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+/* Makes a little gab on top of the right section and alight the elements in the middle */
+.price {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+/* styling the "Price from: " paragraph */
+.priceFrom {
+    color: rgb(133, 129, 129);
+    font-weight: bold;
+    float: left;
+}
+
+/* styling the "£XXXX,XX" paragraph*/
+.priceNumbers {
+    color: rgb(7, 7, 7);
+    font-weight: bold;
+    float: right;
+}
+
+/* Optimize the font size for all devices and all sections*/
+.circleTopText, .circleBottomText, .boxTopText, .boxBottomText {
+    font-size: 3vw;
+}
+/* Making the text under gray rounded element bold as well as the top paragraph inside the box */
+.circleBottomText, .boxTopText {
+   font-weight: bold;
+}
+/* Making the text under rounded element colour black */
+.circleBottomText {
+    color: black;
+}
+
+/* Optimizing mainly the font size of the elements comparing to devices which are after 870px */
+@media screen and (min-width: 870px) {
+     .card-text {
+         font-size: 13px;
+     }
+     .card-title {
+         font-size: 20px;
+     }
+     .strip {
+         font-size: 13px;
+     }
+     .buttonStyle {
+         font-size: 18px;
+     }
+     p {
+         font-size: 15px;
+     }
+     .priceDescription{
+         font-size: 10.5px;
+         float: right;
+     }
+     .priceFrom {
+         font-size: 15px;
+     }
+     .priceNumbers {
+         font-size: 20px;
+         color: black;
+         font-weight: bold;
+     }
+     .circleTopText {
+        font-size:16px;
+    }
+    .circleBottomText {
+        font-size:13px;
+    }
+    .boxTopText {
+        font-size: 13px;
+    }
+    .boxBottomText {
+        font-size: 13px;
+    }
+   }
+
+   /* Optimizing mainly the font size of the elements comparing to devices which are after 768px */
+   @media screen and (min-width: 768px) {
+    .card-text {
+        font-size: 17px;
+    }
+    .card-title {
+        font-size: 20px;
+    }
+    .strip {
+        font-size: 15px;
+    }
+    .buttonStyle {
+        font-size: 18px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .priceDescription{
+        font-size: 10px;
+        float: right;
+    }
+    .priceFrom {
+        font-size: 14px;
+    }
+    .priceNumbers {
+        font-size: 16px;
+        color: black;
+        font-weight: bold;
+    }
+    .circleTopText {
+       font-size:16px;
+   }
+   .circleBottomText {
+       font-size:13px;
+   }
+   .boxTopText {
+       font-size: 13px;
+   }
+   .boxBottomText {
+       font-size: 13px;
+
+   }
+}
+/* Single optimization for the price description right under the price */
+@media screen and (max-width: 770px) {
+    .priceDescription{
+    font-size: 8px;
+    float: right;
+}
+}
